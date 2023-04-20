@@ -188,6 +188,7 @@ input, select, textarea {
 
 	h1 {
 		font-size: 2.75em;
+		font-family: cursive;
 	}
 
 		h1.major {
@@ -3240,7 +3241,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			background-color: #9fbc6f;
 		}
 
 		.wrapper.style1-alt {
