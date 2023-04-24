@@ -6,6 +6,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>  
+.background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+		</style>  
+
 	</head>
 	<body class="is-preload">
 		<!-- Sidebar -->
@@ -206,6 +217,7 @@
 				</div>
 			</footer>
 
+			<canvas class="background"></canvas>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
@@ -215,6 +227,13 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+			<script type = "text/javascript">
+				var particles = Particles.init({
+	selector: '.background',
+  color: ['#DA0463', '#404B69', '#DBEDF3'],
+  connectParticles: true
+});
+			</script>
 
 	</body>
 </html>
