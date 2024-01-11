@@ -1,62 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <title>Emmzy Home</title>
-  <style>
-    body {
-      background-image: url('images/home-bg.jpg');
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Emmzy Home</title>
+    <style>
+        body {
+            background: black;
+        }
+
+        #div-head {
+            background: #a4b7626e;
+        }
+    </style>
 </head>
+
 <body>
 
-  <div class="container mt-5">
-    <div class="jumbotron text-center">
-      <h1 class="display-4">Welcome!</h1>
-      <p class="lead">Choose your destination:</p>
+    <div class="container mt-5">
+        <div class="jumbotron text-center" id="div-head">
+            <h1 class="display-4">Welcome!</h1>
+            <p class="lead">Choose your destination:</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="images/button-bg.png" class="card-img-top" alt="Emmzy Solutions Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Emmzy Solutions</h5>
+                        <p class="card-text">Providing top-notch software consulting, comprehensive IT training, and
+                            reliable staffing services to empower your business. Explore the possibilities with Emmzy
+                            Solutions.</p>
+                        <a href="#" class="btn btn-primary" onclick="navigateToRoute('emmzy-solutions')">Visit</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="images/button-inv.png" class="card-img-top" alt="Emmzy Investments Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Emmzy Investments</h5>
+                        <p class="card-text">Your trusted partner in real estate - offering premium rental and sales
+                            services, and expert advice for profitable investments. Explore the real estate
+                            opportunities with Emmzy Investments.</p>
+                        <a href="#" class="btn btn-primary" onclick="navigateToRoute('emmzy-investments')">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="row">
-      <div class="col-md-6">
-        <div class="card">
-          <img src="images/button-bg.png" class="card-img-top" alt="Emmzy Solutions Image">
-          <div class="card-body">
-            <h5 class="card-title">Emmzy Solutions</h5>
-            <p class="card-text">Providing top-notch software consulting, comprehensive IT training, and reliable staffing services to empower your business. Explore the possibilities with Emmzy Solutions.</p>
-            <a href="#" class="btn btn-primary" onclick="navigateToRoute('emmzy-solutions.html')">Visit</a>
-          </div>
-        </div>
-      </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-      <div class="col-md-6">
-        <div class="card">
-          <img src="images/button-inv.png" class="card-img-top" alt="Emmzy Investments Image">
-          <div class="card-body">
-            <h5 class="card-title">Emmzy Investments</h5>
-            <p class="card-text">Your trusted partner in real estate - offering premium rental and sales services, and expert advice for profitable investments. Explore the real estate opportunities with Emmzy Investments.</p>
-            <a href="#" class="btn btn-primary" onclick="navigateToRoute('emmzy-investments')">Explore</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-  <script>
-    function navigateToRoute(route) {
-      if (route === 'emmzy-solutions') {
-        window.location.href = '/solutions.html';  
-      } else if (route === 'emmzy-investments') {
-        window.location.href = '/investments.html';  
-      }
-    }
-  </script>
+    <script>
+        function navigateToRoute(route) {
+            if (route === 'emmzy-solutions') {
+                window.location.href = '/solutions.html';
+            } else if (route === 'emmzy-investments') {
+                window.location.href = '/investments.html';
+            }
+        }
+    </script>
 
 </body>
+
 </html>
