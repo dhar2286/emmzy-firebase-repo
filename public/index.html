@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <title>Bootstrap Landing Page</title>
+  <title>Emmzy Home</title>
   <style>
     body {
       background: linear-gradient(to bottom, #a4b762, #839b2d);
@@ -25,7 +25,7 @@
           <img src="images/button-bg.png" class="card-img-top" alt="Emmzy Solutions Image">
           <div class="card-body">
             <h5 class="card-title">Emmzy Solutions</h5>
-            <p class="card-text">Description of Emmzy Solutions. Click below to explore.</p>
+            <p class="card-text">Providing top-notch software consulting, comprehensive IT training, and reliable staffing services to empower your business. Explore the possibilities with Emmzy Solutions.</p>
             <a href="#" class="btn btn-primary" onclick="navigateToRoute('index-solutions.html')">Visit</a>
           </div>
         </div>
@@ -33,10 +33,10 @@
 
       <div class="col-md-6">
         <div class="card">
-          <img src="image2.jpg" class="card-img-top" alt="Emmzy Investments Image">
+          <img src="images/button-inv.png" class="card-img-top" alt="Emmzy Investments Image">
           <div class="card-body">
             <h5 class="card-title">Emmzy Investments</h5>
-            <p class="card-text">Description of Emmzy Investments. Click below to explore.</p>
+            <p class="card-text">Your trusted partner in real estate - offering premium rental and sales services, and expert advice for profitable investments. Explore the real estate opportunities with Emmzy Investments.</p>
             <a href="#" class="btn btn-primary" onclick="navigateToRoute('emmzy-investments')">Explore</a>
           </div>
         </div>
@@ -50,9 +50,11 @@
 
   <script>
     function navigateToRoute(route) {
-      // You can add logic here to redirect to the selected route
-      // For now, let's just log the selected route to the console
-      console.log('Navigating to', route);
+        if (route === 'emmzy-solutions') {
+        window.location.href = '/solutions.html';  
+      } else if (route === 'emmzy-investments') {
+        window.location.href = '/investments.html';  
+      }
     }
   </script>
 
